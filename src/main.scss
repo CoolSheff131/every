@@ -1,119 +1,136 @@
 @font-face {
-    font-family: "AvenirNext";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Alice"), local("Alice-Regular"),
-         url("assets/fonts/AvenirNextCyr-Regular.woff") format("woff"),
-         
- }
- .header{
-     margin-top: 35px;
+  font-family: 'AvenirNext';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/AvenirNextCyr-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'AvenirNext';
+  font-style: bold;
+  font-weight: 700;
+  src: url('assets/fonts/AvenirNextCyr-Bold.woff') format('woff');
+}
+
+.container {
+  max-width: 1098px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: AvenirNext;
+}
+
+.header {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  nav,
+  ul {
     display: flex;
-    font-family: AvenirNext;
+    list-style: none;
+    font-size: 14px;
     justify-content: space-between;
-    align-items: center;
-
-    nav,ul {
-        display: flex;
-        list-style: none;
-        font-size: 14px;
-        justify-content: space-between;
+  }
+  nav {
+    li {
+      cursor: pointer;
+      margin-right: 39px;
     }
-    nav{
-        li{
-            cursor: pointer;
-            margin-right: 39px;
-        }
-    }
+  }
 
-    button{
-        cursor: pointer;
-        font-size: inherit;
-        background: none;
-    }
+  button {
+    cursor: pointer;
+    font-size: inherit;
+    background: none;
+  }
 
-    &__lang{
-        display: flex;
-    }
+  &__lang {
+    display: flex;
+  }
 
-    &__lang button{
-        margin-right: 12px;
-        font-size: 16px;
-        
-        border: none;
-    }
+  &__lang button {
+    margin-right: 12px;
+    font-size: 16px;
 
-    &__lang .active{
-        color: #1792C7;
-        text-decoration: underline;
-    }
+    border: none;
+  }
 
-    &__connect{
-        height: 48px;
-        color: #1792C7;
-        border: #1792C7 1px solid;
-        border-radius: 24px;
-        padding: 13px 28px;
-    }
-}
+  &__lang .active {
+    color: #1792c7;
+    text-decoration: underline;
+  }
 
-
-.container{
-    max-width: 1098px;
-    width: 100%;
-    margin: 0 auto;
-    
-}
-
-
-.header{
+  &__connect {
     height: 48px;
-    display: flex;
-    font-family: AvenirNext;
-    justify-content: space-between;
-    align-items: center;
+    color: #1792c7;
+    border: #1792c7 1px solid;
+    border-radius: 24px;
+    padding: 13px 28px;
+  }
+}
 
-    nav,ul {
-        display: flex;
-        list-style: none;
-        font-size: 14px;
-        justify-content: space-between;
+.first{
+    margin-top: 91px;
+    background-image: url('./assets/img/money.svg');
+    background-position-x: right;
+    background-repeat: no-repeat;
+    &__left{
+        width: 497px;
     }
-    nav{
-        li{
-            cursor: pointer;
-            margin-right: 39px;
-        }
+
+    h1{
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 46px;
+        letter-spacing: 0.9859458804130554px;
+        text-align: left;
+    }
+    h5{
+        margin: 0;
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.4430769979953766px;
+        text-align: left;
+    }
+
+    &__email{
+        margin-top: 48px;
+        height: 48px;
+        width: 440px;
+        position: relative;
+    }
+
+    input{
+        background-color: #F3F9FF;
+        padding-left: 20px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        height: 100%;
+        width: 100%;
+        border: none;
+        border-radius: 24px;
+        outline: none;
     }
 
     button{
+        background: linear-gradient(#1792C7, #00B8F0);
         cursor: pointer;
-        font-size: inherit;
-        background: none;
-    }
-
-    &__lang{
-        display: flex;
-    }
-
-    &__lang button{
-        box-sizing: border-box;
-        margin-right: 12px;
-        font-size: 16px;
-        
+        color: #fff;
+        position: absolute;
         border: none;
-    }
-
-    &__lang .active{
-        color: #1792C7;
-        text-decoration: underline;
-    }
-
-    &__connect{
-        height: 48px;
-        color: #1792C7;
-        border: #1792C7 1px solid;
         border-radius: 24px;
-        padding: 13px 28px;
+        padding:  12px 53px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        font-family: inherit;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.4430769979953766px;
+        text-align: center;
+        
     }
 }
