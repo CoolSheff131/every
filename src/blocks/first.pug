@@ -1,8 +1,8 @@
-block first
-    .first 
+mixin blockSection(title,subtitle,bgn)
+    .first(style=`background-image: url(${bgn});`)
         .first__left
-            h1 Не пропускайте важные оплаты
-            h5 Если от них зависят ваши проекты или старт рекламных кампаний
+            h1= title
+            h5= subtitle
             .first__email
                 input(type="email",placeholder="Введите email" )
                 button Узнать
