@@ -1,5 +1,119 @@
-$color_h1: tomato;
+@font-face {
+    font-family: "AvenirNext";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Alice"), local("Alice-Regular"),
+         url("assets/fonts/AvenirNextCyr-Regular.woff") format("woff"),
+         
+ }
+ .header{
+     margin-top: 35px;
+    display: flex;
+    font-family: AvenirNext;
+    justify-content: space-between;
+    align-items: center;
 
-h1 {
-    color: $color_h1;
+    nav,ul {
+        display: flex;
+        list-style: none;
+        font-size: 14px;
+        justify-content: space-between;
+    }
+    nav{
+        li{
+            cursor: pointer;
+            margin-right: 39px;
+        }
+    }
+
+    button{
+        cursor: pointer;
+        font-size: inherit;
+        background: none;
+    }
+
+    &__lang{
+        display: flex;
+    }
+
+    &__lang button{
+        margin-right: 12px;
+        font-size: 16px;
+        
+        border: none;
+    }
+
+    &__lang .active{
+        color: #1792C7;
+        text-decoration: underline;
+    }
+
+    &__connect{
+        height: 48px;
+        color: #1792C7;
+        border: #1792C7 1px solid;
+        border-radius: 24px;
+        padding: 13px 28px;
+    }
+}
+
+
+.container{
+    max-width: 1098px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+
+.header{
+    height: 48px;
+    display: flex;
+    font-family: AvenirNext;
+    justify-content: space-between;
+    align-items: center;
+
+    nav,ul {
+        display: flex;
+        list-style: none;
+        font-size: 14px;
+        justify-content: space-between;
+    }
+    nav{
+        li{
+            cursor: pointer;
+            margin-right: 39px;
+        }
+    }
+
+    button{
+        cursor: pointer;
+        font-size: inherit;
+        background: none;
+    }
+
+    &__lang{
+        display: flex;
+    }
+
+    &__lang button{
+        box-sizing: border-box;
+        margin-right: 12px;
+        font-size: 16px;
+        
+        border: none;
+    }
+
+    &__lang .active{
+        color: #1792C7;
+        text-decoration: underline;
+    }
+
+    &__connect{
+        height: 48px;
+        color: #1792C7;
+        border: #1792C7 1px solid;
+        border-radius: 24px;
+        padding: 13px 28px;
+    }
 }
