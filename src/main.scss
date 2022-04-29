@@ -649,3 +649,35 @@
     color: #2d3238;
   }
 }
+
+.security{
+  margin-top: 160px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  background-image: url('./assets/img/security.svg');
+  background-repeat: no-repeat;
+  
+  &__right{
+    width: 50%;
+    h1{
+      margin: 0;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 46px;
+      letter-spacing: 0.9859458804130554px;
+      text-align: left;
+      color: #2D3238;
+    }
+    h5{
+      margin: 0;
+      margin-top: 28px;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 34px;
+      letter-spacing: 0.7138460874557495px;
+      text-align: left;
+      color: #2D3238;
+    }
+  }
+}
