@@ -69,97 +69,127 @@
   }
 }
 
-.first{
-    overflow: visible;
-    margin-top: 91px;
-    background-image: url('./assets/img/money.svg');
-    background-position-x: right;
-    background-repeat: no-repeat;
-    &__left{
-        width: 497px;
-    }
+.first {
+  overflow: visible;
+  margin-top: 91px;
+  background-image: url('./assets/img/money.svg');
+  background-position-x: right;
+  background-repeat: no-repeat;
+  &__left {
+    width: 497px;
+  }
 
-    h1{
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 46px;
-        letter-spacing: 0.9859458804130554px;
-        text-align: left;
-    }
-    h5{
-        margin: 0;
-        margin-top: 10px;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 28px;
-        letter-spacing: 0.4430769979953766px;
-        text-align: left;
-    }
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0.9859458804130554px;
+    text-align: left;
+  }
+  h5 {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.4430769979953766px;
+    text-align: left;
+  }
 
-    &__email{
-        margin-top: 48px;
-        height: 48px;
-        width: 440px;
-        position: relative;
-    }
+  &__email {
+    margin-top: 48px;
+    height: 48px;
+    width: 440px;
+    position: relative;
+  }
 
-    input{
-        background-color: #F3F9FF;
-        padding-left: 20px;
-        padding-top: 12px;
-        padding-bottom: 12px;
-        height: 100%;
-        width: 100%;
-        border: none;
-        border-radius: 24px;
-        outline: none;
-    }
+  input {
+    background-color: #f3f9ff;
+    padding-left: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 24px;
+    outline: none;
+  }
 
-    button{
-        background: linear-gradient(#1792C7, #00B8F0);
-        cursor: pointer;
-        color: #fff;
-        position: absolute;
-        border: none;
-        border-radius: 24px;
-        padding:  12px 53px;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        font-family: inherit;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0.4430769979953766px;
-        text-align: center;
-        
-    }
+  button {
+    background: linear-gradient(#1792c7, #00b8f0);
+    cursor: pointer;
+    color: #fff;
+    position: absolute;
+    border: none;
+    border-radius: 24px;
+    padding: 12px 53px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.4430769979953766px;
+    text-align: center;
+  }
 }
 
-.blockTwo{
-    margin-top: 235px;
-    display: flex;
-    height: 325;
-    justify-content: end;
-    background-image: url('./assets/img/Chat.svg');
-    background-position-x: left;
-    background-repeat: no-repeat;
-    &__right{
-        width: 534px;
-    }
+.blockTwo {
+  margin-top: 235px;
+  display: flex;
+  height: 325;
+  justify-content: end;
+  background-image: url('./assets/img/Chat.svg');
+  background-position-x: left;
+  background-repeat: no-repeat;
+  &__right {
+    width: 534px;
+  }
 
-    h1{
-        font-size: 28px;
-        font-weight: 400;
-        line-height: 36px;
-        letter-spacing: 0.4399999976158142px;
-        text-align: left;
+  h1 {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.4399999976158142px;
+    text-align: left;
+  }
+  h5 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.4430769979953766px;
+    text-align: left;
+  }
+}
+
+.howItWorks {
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0.9859458804130554px;
+    text-align: left;
+  }
+
+  &__blocks {
+    display: flex;
+  }
+
+  &__block {
+    background-position-x: center;
+    background-repeat: no-repeat;
+    margin-top: 90px;
+    display: flex;
+    align-items: end;
+    width: 346px;
+    height: 237px;
+    h5 {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0.4430769979953766px;
+      text-align: center;
     }
-    h5{
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 28px;
-        letter-spacing: 0.4430769979953766px;
-        text-align: left;
-    }
+  }
 }
