@@ -263,3 +263,96 @@
     }
   }
 }
+
+.banksIntegration{
+  margin-top: 140px;
+  h1{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0.9859458804130554px;
+    text-align: left;
+    
+  }
+  ul{
+    list-style: none;
+  }
+  
+  .blocks{
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    h5{
+      color: #3898FE80;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0.4430769979953766px;
+      text-align: left;
+    }
+    div{
+      border: 1px solid #3898FE30;
+      width: 534px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  &__left{
+    .banks{
+      border-bottom: 1.08px solid #3898FE30;
+      
+    }
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      li{
+        width: 50%;
+        height: 76.08px;
+        background-repeat: no-repeat;
+        background-position-y: center;
+      }
+      #tochka{
+        background-image: url('./assets/img/точка.svg');
+        
+      }
+      #tinkoff{
+        background-image: url('./assets/img/тинькофф.svg');
+      }
+      #module{
+        background-image: url('./assets/img/модуль.svg');
+      }
+      #download1c{
+        background-image: url('./assets/img/Звгрузка\ из\ 1С.svg');
+      }
+    }
+  }
+
+  &__right{
+    ul{
+      padding: 0;
+    }
+    li{
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 75px;
+      letter-spacing: 0.4430769979953766px;
+      text-align: left;
+      height: 72.85px;
+      padding-left: 80px;
+      background-repeat: no-repeat;
+      background-position-y: center;
+    }
+    #pushNotify{
+      background-image: url('./assets/img/pushNotify.svg');
+    }
+    #emailNotify{
+      background-image: url('./assets/img/emailNotify.svg');
+    }
+    #telegramNotify{
+      background-image: url('./assets/img/telegramNotify.svg');
+    }
+  }
+  
+  
+}
