@@ -6,7 +6,7 @@
 }
 @font-face {
   font-family: 'AvenirNext';
-  font-style: bold;
+  font-style: normal;
   font-weight: 700;
   src: url('assets/fonts/AvenirNextCyr-Bold.woff') format('woff');
 }
@@ -85,6 +85,7 @@
     line-height: 46px;
     letter-spacing: 0.9859458804130554px;
     text-align: left;
+    color: #2D3238;
   }
   h5 {
     margin: 0;
@@ -153,6 +154,7 @@
     line-height: 36px;
     letter-spacing: 0.4399999976158142px;
     text-align: left;
+    color: #2D3238;
   }
   h5 {
     font-size: 18px;
@@ -170,6 +172,7 @@
     line-height: 46px;
     letter-spacing: 0.9859458804130554px;
     text-align: left;
+    color: #2D3238;
   }
 
   &__blocks {
@@ -213,6 +216,7 @@
     line-height: 46px;
     letter-spacing: 0.9859458804130554px;
     text-align: left;
+    color: #2D3238;
   }
   h5{
     margin: 0;
@@ -269,7 +273,7 @@
     line-height: 46px;
     letter-spacing: 0.9859458804130554px;
     text-align: left;
-    
+    color: #2D3238;
   }
   ul{
     list-style: none;
@@ -360,6 +364,7 @@
     line-height: 46px;
     letter-spacing: 0.9859458804130554px;
     text-align: left;
+    color: #2D3238;
   }
   .blocks{
     margin-top: 90px;
@@ -389,12 +394,11 @@
     }
     p{
       margin-top: 12px;
-font-size: 18px;
-font-weight: 400;
-line-height: 28px;
-letter-spacing: 0.4430769979953766px;
-text-align: left;
-
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0.4430769979953766px;
+      text-align: left;
     }
   }
   #smallBusiness {
@@ -405,5 +409,83 @@ text-align: left;
   }
   #developer {
     background-image: url('./assets/img/developer.svg');
+  }
+}
+
+.cases{
+  margin-top: 189px;
+  h1{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0.9859458804130554px;
+    text-align: left;
+    color: #2D3238;
+  }
+  .blocks{
+    margin-top: 85px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .block{
+    
+    border: 1px solid rgba(56, 152, 254, 0.187528);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 346px;
+    height: 297px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 19px;
+    background-repeat: no-repeat;
+    background-position-x: 24px;
+    background-position-y: 30px;
+
+    
+    h5{
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0.4399999976158142px;
+      text-align: left;
+      color: #2D3238;
+    }
+    a{
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.36923089623451233px;
+      text-align: left;
+      color: #1792C7;
+    }
+    span{
+      display: flex;
+      align-items: center;
+      .arrows{
+        width: 10px;
+        height: 10px;
+        border-bottom: 1px solid #1792C7;
+        border-left: 1px solid #1792C7;
+        transform: rotate(-135deg);
+      }
+    }
+    
+
+  }
+  .block.active{
+    background-color: #F3F9FF;
+    border: none;
+    border-bottom: 3px solid #1792C7;
+  }
+  #case1{
+    background-image: url('./assets/img/case1.svg');
+  }
+  #case2{
+    background-image: url('./assets/img/case2.svg');
+  }
+  #case3{
+    background-image: url('./assets/img/case3.svg');
   }
 }
