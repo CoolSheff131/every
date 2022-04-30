@@ -84,11 +84,13 @@
 .first {
   overflow: visible;
   margin-top: 91px;
-  background-image: url('./assets/img/money.svg');
-  background-position-x: right;
-  background-repeat: no-repeat;
+  display: flex;
   &__left {
-    width: 497px;
+    width: 50%;
+  }
+
+  &__right{
+    width: 50%;
   }
 
   h1 {
