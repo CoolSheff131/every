@@ -1,7 +1,7 @@
 
 block header
     .header 
-        img(src='./assets/img/Логотип.svg')
+        img(src='../assets/img/Логотип.svg')
         nav 
             ul 
                 li Как это работает?
@@ -13,4 +13,8 @@ block header
             button.active Ru
             button En
         button.header__connect Подключиться
+        .hamburger-menu
+            input(type="checkbox")#menu__toggle
+            label(for="menu__toggle").menu__btn
+                span
     

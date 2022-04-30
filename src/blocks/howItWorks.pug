@@ -1,10 +1,13 @@
-mixin howItWorks(bgn1,bgn2,bgn3)
+block howItWorks
     .howItWorks
         h1 Как это работает
         .howItWorks__blocks 
-            .howItWorks__block(style=`background-image: url(${bgn1});`)
+            .howItWorks__block 
+                img(src="../assets/img/howItWorks1.svg", alt="").howItWorks__block-img
                 h5 Подключите свой банковский счет
-            .howItWorks__block(style=`background-image: url(${bgn2});`)
+            .howItWorks__block
+                img(src="../assets/img/howItWorks2.svg", alt="").howItWorks__block-img
                 h5 Выберите, куда и кому отправлять информацию
-            .howItWorks__block(style=`background-image: url(${bgn3});`)
+            .howItWorks__block
+                img(src="../assets/img/howItWorks3.svg", alt="").howItWorks__block-img
                 h5 Получайте информацию о поступивших оплатах
