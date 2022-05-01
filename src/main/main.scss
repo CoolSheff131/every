@@ -30,7 +30,11 @@
     padding-right: 21px;
   }
 }
-
+.background{
+  z-index: -100;
+  position: absolute;
+  top: 2295px;
+}
 .map {
   display: none;
 }
