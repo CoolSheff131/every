@@ -9,11 +9,15 @@ block footer
                     p.footer__email hello@everypay.io
                     
                 .footer__right
-                    form.footer__form
-                        input(type="text", placeholder='Ваше имя*')
-                        input(type="email", placeholder='Email*')
-                        textarea( placeholder='Расскажите о своей компании*')
-                        button Подключиться
+                    form(method="post",onsubmit="event.preventDefault();").footer__form#footer__form
+                        input(type="text", placeholder='Ваше имя*', required)
+                        input(type="email", placeholder='Email*', required)
+                        textarea( placeholder='Расскажите о своей компании*', required)
+                        button(type="submit") Подключиться
             .footer__info
                 span.footer__copy © 2020, Everypay
                 a Политика конфиденциальности
+    #myModal.modal
+        .modal-content
+            p Спасибо! Мы приняли ваш запрос.В ближайшее время наш специалист поддержки свяжется с вами.
+        

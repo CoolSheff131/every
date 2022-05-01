@@ -100,3 +100,14 @@ window.addEventListener('optimizedResize', function () {
     breakPoint = true;
   }
 });
+
+var modal = document.getElementById('myModal');
+var footerForm = document.getElementById('footer__form');
+footerForm.addEventListener('submit', (e) => {
+  modal.style.display = 'block';
+});
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+};
