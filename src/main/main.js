@@ -1,6 +1,16 @@
 import './reset.scss';
 import './main.scss';
 console.log('Hello main.js!');
+
+document.querySelectorAll('#emailForm').forEach((emailForm) =>
+  emailForm.addEventListener('submit', (e) => {
+    console.log(e);
+    e.target[0].style.display = 'none';
+    e.target[1].style.display = 'none';
+    e.target.querySelector('.completedMsg').style.display = 'flex';
+  }),
+);
+
 document.querySelector('#menu__toggle').addEventListener('change', (e) => {
   document.body.style.overflow = e.target.checked === true ? 'hidden' : '';
 });

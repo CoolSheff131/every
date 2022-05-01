@@ -4,8 +4,11 @@ mixin blockSection(title,subtitle,bgn)
             .first__left
                 h1= title
                 h5= subtitle
-                .first__email
-                    input(type="email",placeholder="Введите email" )
-                    button Узнать
+                form(method="post",onsubmit="event.preventDefault();").first__email#emailForm
+                    div.completedMsg 
+                        img(src="../assets/img/galka.svg", alt="")
+                        span Проверьте e-mail!
+                    input(type="email",placeholder="Введите email",name="email",required)
+                    button(type="submit") Узнать
             .first__right
                 img(src=bgn)
