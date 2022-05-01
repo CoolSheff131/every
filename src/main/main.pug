@@ -9,23 +9,30 @@ html(lang="en")
     body
         .container
             block header
+        .carousel 
+            .carousel__content
+                +blockSection('Не пропускайте важные оплаты',
+                'Если от них зависят ваши проекты или старт рекламных кампаний',
+                '../assets/img/money.svg')
 
-            +blockSection('Не пропускайте важные оплаты',
-            'Если от них зависят ваши проекты или старт рекламных кампаний',
-            '../assets/img/money.svg')
+                +blockSection('Сократите издержки на бухгалтерию и коммуникации',
+                'Получайте информацию о платежах на счет компании там, где вам удобно',
+                '../assets/img/secondBgn.svg')
 
-            +blockSection('Сократите издержки на бухгалтерию и коммуникации',
-            'Получайте информацию о платежах на счет компании там, где вам удобно',
-            '../assets/img/secondBgn.svg')
+                +blockSection('Создавайте собственные сценарии действий',
+                'при поступлении денег на счет вашей компании',
+                '../assets/img/thirdBgn.svg')
 
-            +blockSection('Создавайте собственные сценарии действий',
-            'при поступлении денег на счет вашей компании',
-            '../assets/img/thirdBgn.svg')
-
-            +blockSection('Реагируйте на платежи так быстро, как они поступают на ваш счет',
-            '',
-            '../assets/img/fourthBgn.svg')
-
+                +blockSection('Реагируйте на платежи так быстро, как они поступают на ваш счет',
+                '',
+                '../assets/img/fourthBgn.svg')
+        .map
+            button.active.first
+            button.second
+            button.third
+            button.fourth
+            
+        .container
             block blockTwo
             block howItWorks
             block autoBusiness

@@ -1,5 +1,8 @@
 .cases {
     margin-top: 190px;
+    &__map{
+        display: none;
+    }
     h1 {
       font-size: 40px;
       font-weight: 700;
@@ -75,14 +78,41 @@
       h1 {
         text-align: center;
       }
-  
+      .blocks__wrapper{
+          overflow: visible;
+      }
       .blocks {
         margin-top: 70px;
-        display: block;
+        display: flex;
+        width: fit-content;
+        transition: all 1s ease-in-out;
       }
   
       .block {
         width: 310px;
+        margin-right: 20px;
+      }
+      &__map {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        & > button {
+          all: unset;
+          
+          background: white;
+          border: 1px solid #B2EEFC;
+          cursor: pointer;
+          margin-right: 14px;
+          user-select: none;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+      
+          &.cases__active {
+            background: linear-gradient(180deg, #1792C7 0%, #00B8F0 100%);
+            
+          }
+        }
       }
     }
     @media (vars.$sm) {

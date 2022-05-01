@@ -29,3 +29,40 @@
     padding-right: 21px;
   }
 }
+
+.map {
+  display: none;
+}
+@media (vars.$md) {
+.carousel {
+  display: flex;
+  overflow: hidden;
+  &__content{
+    display: flex;
+    transition: all 1s ease-in-out;
+  }
+}
+.map {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  & > button {
+    all: unset;
+    
+    background: white;
+    border: 1px solid #B2EEFC;
+    cursor: pointer;
+    margin-right: 14px;
+    user-select: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+
+    &.active {
+      background: linear-gradient(180deg, #1792C7 0%, #00B8F0 100%);
+      
+    }
+  }
+}
+
+}

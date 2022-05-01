@@ -1,10 +1,11 @@
 mixin blockSection(title,subtitle,bgn)
     .first
-        .first__left
-            h1= title
-            h5= subtitle
-            .first__email
-                input(type="email",placeholder="Введите email" )
-                button Узнать
-        .first__right
-            img(src=bgn)
+        .container
+            .first__left
+                h1= title
+                h5= subtitle
+                .first__email
+                    input(type="email",placeholder="Введите email" )
+                    button Узнать
+            .first__right
+                img(src=bgn)
