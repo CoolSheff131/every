@@ -34,16 +34,20 @@
     height: 48px;
     width: 440px;
     position: relative;
-
+    border-radius: 24px;
+    display: flex;
+    overflow: hidden;
+    background-color: vars.$ligntCyan;
     input {
       background-color: vars.$ligntCyan;
+      text-overflow: ellipsis;
+      overflow: hidden;
       padding-left: 20px;
       padding-top: 12px;
       padding-bottom: 12px;
       height: 100%;
       width: 100%;
       border: none;
-      border-radius: 24px;
       outline: none;
     }
     button:hover{
@@ -55,13 +59,11 @@
       background: linear-gradient(vars.$blue, vars.$cyan);
       cursor: pointer;
       color: vars.$white;
-      position: absolute;
+      
       border: none;
       border-radius: 24px;
       padding: 12px 53px;
-      right: 0;
-      top: 0;
-      bottom: 0;
+      
       font-family: inherit;
       font-size: 16px;
       font-weight: 400;
@@ -110,37 +112,6 @@
       height: 48px;
       width: 100%;
       position: relative;
-
-      input {
-        background-color: vars.$ligntCyan;
-        padding-left: 20px;
-        padding-top: 12px;
-        padding-bottom: 12px;
-        height: 100%;
-        width: 100%;
-        border: none;
-        border-radius: 24px;
-        outline: none;
-      }
-
-      button {
-        background: linear-gradient(vars.$blue, vars.$cyan);
-        cursor: pointer;
-        color: vars.$white;
-        position: absolute;
-        border: none;
-        border-radius: 24px;
-        padding: 12px 53px;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        font-family: inherit;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0.4430769979953766px;
-        text-align: center;
-      }
     }
   }
 

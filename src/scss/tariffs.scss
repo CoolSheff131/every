@@ -8,16 +8,21 @@
       height: 48px;
       width: 440px;
       position: relative;
-  
+      border-radius: 24px;
+      display: flex;
+      overflow: hidden;
+      background-color: vars.$ligntCyan;
       input {
         background-color: vars.$ligntCyan;
+        text-overflow: ellipsis;
+        overflow: hidden;
         padding-left: 20px;
         padding-top: 12px;
         padding-bottom: 12px;
         height: 100%;
-        width: 100%;
+        flex: 1;
         border: none;
-        border-radius: 24px;
+        
         outline: none;
       }
 
@@ -30,13 +35,10 @@
         transition: all .5s ease-in-out;
         cursor: pointer;
         color: vars.$white;
-        position: absolute;
+        
         border: none;
         border-radius: 24px;
         padding: 12px 53px;
-        right: 0;
-        top: 0;
-        bottom: 0;
         font-family: inherit;
         font-size: 16px;
         font-weight: 400;
@@ -55,7 +57,7 @@
     &__left {
       width: 497px;
       .tariffs__email {
-        display: block;
+        display: flex;
       }
       h1 {
         display: block;
