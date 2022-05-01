@@ -4,6 +4,13 @@ console.log('Hello main.js!');
 document.querySelector('#menu__toggle').addEventListener('change', (e) => {
   document.body.style.overflow = e.target.checked === true ? 'hidden' : '';
 });
+document.querySelector('.menu__box').addEventListener('click', (e) => {
+  if (e.target.nodeName === 'A') {
+    document.querySelector('#menu__toggle').checked = false;
+    document.body.style.overflow = false;
+    document.body.style.overflow = e.target.checked === true ? 'hidden' : '';
+  }
+});
 
 const buttonsWrapper = document.querySelector('.map');
 const slides = document.querySelector('.carousel__content');

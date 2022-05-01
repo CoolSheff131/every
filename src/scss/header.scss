@@ -7,6 +7,15 @@
     img{
         z-index: 100;
     }
+
+    a{
+        transition: all .5s ease-in-out;
+        text-decoration: none;
+        color: #2D3238;
+    }
+    a:hover{
+        color: #1792C7;
+    }
     #menu__toggle {
       opacity: 0;
     }
@@ -80,7 +89,7 @@
             }
         }
       }
-      /* элементы меню */
+      
       .menu__item {
         display: block;
         cursor: pointer;
@@ -92,9 +101,6 @@ line-height: 33px;
 letter-spacing: 0.9599999785423279px;
 text-align: center;
 
-      }
-      .menu__item:hover {
-        text-decoration: underline;
       }
 
      
