@@ -1,66 +1,66 @@
 .howItWorks {
-    margin-top: 160px;
-    h1 {
-      font-size: 40px;
-      font-weight: 700;
-      line-height: 46px;
-      letter-spacing: 0.9859458804130554px;
-      text-align: left;
-      color: #2d3238;
-    }
+  margin-top: 160px;
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0.9859458804130554px;
+    text-align: left;
+    color: #2d3238;
+  }
 
-    img{
-        width: 100%;
-        max-height: 137px;
+  img {
+    width: 100%;
+    max-height: 137px;
+  }
+
+  &__blocks {
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-between;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 342px;
+    padding-left: 62px;
+    padding-right: 62px;
+    h5 {
+      margin: 0;
+      margin-top: 13px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0.4430769979953766px;
+      text-align: center;
     }
-  
-    &__blocks {
-      display: flex;
-      margin-top: 70px;
-      justify-content: space-between;
+  }
+
+  @media (vars.$md) {
+    margin-top: 130px;
+    h1 {
+      text-align: center;
     }
-  
     &__block {
-      display: flex;
+      max-width: 200px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  @media (vars.$sm) {
+    margin-top: 92px;
+    &__blocks {
+      margin-top: 40px;
       flex-direction: column;
-      justify-content: space-between;
-        width: 342px;
-        padding-left: 62px;
-        padding-right: 62px;
+      align-items: center;
+    }
+    &__block {
+      margin-top: 40px;
       h5 {
-        margin: 0;
-        margin-top: 13px;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 28px;
-        letter-spacing: 0.4430769979953766px;
-        text-align: center;
-      }
-    }
-  
-    @media (vars.$md) {
-      margin-top: 130px;
-      h1 {
-        text-align: center;
-      }
-      &__block {
-        max-width: 200px;
-        padding-left: 0;
-        padding-right: 0;
-      }
-    }
-    @media (vars.$sm) {
-      margin-top: 92px;
-      &__blocks {
-          margin-top: 40px;
-        flex-direction: column;
-        align-items: center;
-      }
-      &__block {
-        margin-top: 40px;
-        h5 {
-          margin-top: 10px;
-        }
+        margin-top: 10px;
       }
     }
   }
+}

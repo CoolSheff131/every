@@ -1,149 +1,148 @@
 .tariffs {
-    margin-top: 91px;
-    h1 {
-      display: none;
-    }
-    &__email {
-      margin-top: 48px;
-      height: 48px;
-      width: 440px;
-      
-      border-radius: 24px;
-      display: flex;
-      
-      background-color: vars.$ligntCyan;
-      .completedMsg{
-        display: none;
-        width: 100%;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        img{
-            margin-right: 16px;
-        }
-    }
-      input {
-        background-color: vars.$ligntCyan;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        padding-left: 20px;
-        padding-top: 12px;
-        padding-bottom: 12px;
-        height: 100%;
-        flex: 1;
-        border: none;
-        border-radius: 24px 0 0 24px;
-        outline: none;
-      }
+  margin-top: 91px;
+  h1 {
+    display: none;
+  }
+  &__email {
+    margin-top: 48px;
+    height: 48px;
+    width: 440px;
 
-      button:hover{
-        box-shadow: 0px 6px 18px rgba(53, 152, 254, 0.38185);
-    }
-  
-      button {
-        background: linear-gradient(vars.$blue, vars.$cyan);
-        transition: all .5s ease-in-out;
-        cursor: pointer;
-        color: vars.$white;
-        
-        border: none;
-        border-radius: 24px;
-        padding: 12px 53px;
-        font-family: inherit;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0.4430769979953766px;
-        text-align: center;
-      }
-    }
-  
-    &__content {
-      display: flex;
-    }
-    &__email {
+    border-radius: 24px;
+    display: flex;
+
+    background-color: vars.$ligntCyan;
+    .completedMsg {
       display: none;
-    }
-    &__left {
-      width: 497px;
-      .tariffs__email {
-        display: flex;
-      }
-      h1 {
-        display: block;
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      img {
+        margin-right: 16px;
       }
     }
-  
-    h1 {
-      font-size: 40px;
-      font-weight: 700;
-      line-height: 46px;
-      letter-spacing: 0.9859458804130554px;
-      text-align: left;
-      color: #2d3238;
+    input {
+      background-color: vars.$ligntCyan;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      padding-left: 20px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      height: 100%;
+      flex: 1;
+      border: none;
+      border-radius: 24px 0 0 24px;
+      outline: none;
     }
-    h5 {
-      margin: 0;
-      margin-top: 28px;
-      font-size: 18px;
+
+    button:hover {
+      box-shadow: 0px 6px 18px rgba(53, 152, 254, 0.38185);
+    }
+
+    button {
+      background: linear-gradient(vars.$blue, vars.$cyan);
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+      color: vars.$white;
+
+      border: none;
+      border-radius: 24px;
+      padding: 12px 53px;
+      font-family: inherit;
+      font-size: 16px;
       font-weight: 400;
-      line-height: 28px;
+      line-height: 24px;
       letter-spacing: 0.4430769979953766px;
-      text-align: left;
-    }
-  
-    @media (vars.$md) {
-      margin-top: 110px;
-      display: block;
-  
-      &__content {
-        display: flex;
-        margin-top: 70px;
-      }
-      h1 {
-        text-align: center;
-        width: 100%;
-        display: block;
-      }
-  
-      h5 {
-        width: 383px;
-      }
-  
-      &__left {
-        width: 100%;
-        h1 {
-          display: none;
-        }
-        .tariffs__email {
-          display: none;
-        }
-      }
-  
-      &__email {
-        display: flex;
-        margin: 42px auto 0;
-      }
-    }
-    @media (vars.$sm) {
-      h1 {
-        display: none;
-      }
-      h5 {
-        margin-top: 40px;
-      }
-      &__content {
-        flex-direction: column-reverse;
-      }
-      &__left {
-        margin-top: 46px;
-        h1 {
-          display: block;
-        }
-      }
-      &__email {
-        width: 100%;
-      }
+      text-align: center;
     }
   }
-  
+
+  &__content {
+    display: flex;
+  }
+  &__email {
+    display: none;
+  }
+  &__left {
+    width: 497px;
+    .tariffs__email {
+      display: flex;
+    }
+    h1 {
+      display: block;
+    }
+  }
+
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0.9859458804130554px;
+    text-align: left;
+    color: #2d3238;
+  }
+  h5 {
+    margin: 0;
+    margin-top: 28px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.4430769979953766px;
+    text-align: left;
+  }
+
+  @media (vars.$md) {
+    margin-top: 110px;
+    display: block;
+
+    &__content {
+      display: flex;
+      margin-top: 70px;
+    }
+    h1 {
+      text-align: center;
+      width: 100%;
+      display: block;
+    }
+
+    h5 {
+      width: 383px;
+    }
+
+    &__left {
+      width: 100%;
+      h1 {
+        display: none;
+      }
+      .tariffs__email {
+        display: none;
+      }
+    }
+
+    &__email {
+      display: flex;
+      margin: 42px auto 0;
+    }
+  }
+  @media (vars.$sm) {
+    h1 {
+      display: none;
+    }
+    h5 {
+      margin-top: 40px;
+    }
+    &__content {
+      flex-direction: column-reverse;
+    }
+    &__left {
+      margin-top: 46px;
+      h1 {
+        display: block;
+      }
+    }
+    &__email {
+      width: 100%;
+    }
+  }
+}

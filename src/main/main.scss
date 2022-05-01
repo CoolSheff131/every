@@ -14,8 +14,6 @@
 @import '../scss/security';
 @import '../scss/footer';
 
-
-
 .container {
   max-width: 1098px;
   width: 100%;
@@ -30,7 +28,7 @@
     padding-right: 21px;
   }
 }
-.background{
+.background {
   z-index: -100;
   position: absolute;
   top: 2295px;
@@ -39,7 +37,7 @@
   }
 }
 
-.background_md{
+.background_md {
   z-index: -100;
   position: absolute;
   top: 3866px;
@@ -52,7 +50,7 @@
   }
 }
 
-.background_sm{
+.background_sm {
   z-index: -100;
   position: absolute;
   top: 3821px;
@@ -65,35 +63,33 @@
   display: none;
 }
 @media (vars.$md) {
-.carousel {
-  display: flex;
-  overflow: hidden;
-  &__content{
+  .carousel {
     display: flex;
-    transition: all .5s ease-in-out;
-  }
-}
-.map {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  & > button {
-    all: unset;
-    
-    background: white;
-    border: 1px solid #B2EEFC;
-    cursor: pointer;
-    margin-right: 14px;
-    user-select: none;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-
-    &.active {
-      background: linear-gradient(180deg, #1792C7 0%, #00B8F0 100%);
-      
+    overflow: hidden;
+    &__content {
+      display: flex;
+      transition: all 0.5s ease-in-out;
     }
   }
-}
+  .map {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    & > button {
+      all: unset;
 
+      background: white;
+      border: 1px solid #b2eefc;
+      cursor: pointer;
+      margin-right: 14px;
+      user-select: none;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+
+      &.active {
+        background: linear-gradient(180deg, #1792c7 0%, #00b8f0 100%);
+      }
+    }
+  }
 }

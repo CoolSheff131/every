@@ -1,219 +1,216 @@
 .header {
-    margin-top: 35px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  img {
     z-index: 100;
-    img{
-        z-index: 100;
-    }
+  }
 
-    a{
-        transition: all .5s ease-in-out;
-        text-decoration: none;
-        color: #2D3238;
-    }
-    a:hover{
-        color: #555E6880;
-    }
-    a:active{
-        color: #1792C7;
-    }
-    #menu__toggle {
-      opacity: 0;
-    }
-    .hamburger-menu {
-      display: none;
-      z-index: 10;
-      nav{
-          display: block;
-      }
-    }
-  
-    .menu__btn {
-      display: flex;
-      align-items: center;
-      position: relative;
-  
-      width: 27px;
-      height: 13px;
-      cursor: pointer;
-      z-index: 1;
-    }
-  
-    .menu__btn > span::before,
-    .menu__btn > span::after {
+  a {
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+    color: #2d3238;
+  }
+  a:hover {
+    color: #555e6880;
+  }
+  a:active {
+    color: #1792c7;
+  }
+  #menu__toggle {
+    opacity: 0;
+  }
+  .hamburger-menu {
+    display: none;
+    z-index: 10;
+    nav {
       display: block;
-      position: absolute;
-      width: 100%;
-      height: 3.54px;
-      background-color: #1399cf;
     }
-    .menu__btn > span::before {
-      content: '';
-      top: -8px;
-    }
-    .menu__btn > span::after {
-      content: '';
-      top: 8px;
-    }
+  }
 
-    .menu__box {
-        overflow: auto;
-        display: block;
-        position: fixed;
-        visibility: hidden;
-        top: 0;
-        padding-top: 200px;
-        left: 0;
-        right: 0;
-        bottom: 0;   
-        margin: 0;
-        
-        list-style: none;
-        text-align: center;
-        background-color: vars.$white;
-        ul{
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        li{
-            button{
-                margin: 0 auto;
-                margin-top: 36px;
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    width: 27px;
+    height: 13px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3.54px;
+    background-color: #1399cf;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+
+  .menu__box {
+    overflow: auto;
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    padding-top: 200px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+
+    list-style: none;
+    text-align: center;
+    background-color: vars.$white;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      button {
+        margin: 0 auto;
+        margin-top: 36px;
         background: linear-gradient(vars.$blue, vars.$cyan);
         cursor: pointer;
         color: vars.$white;
-        
+
         border: none;
         border-radius: 24px;
         padding: 12px 53px;
-        
+
         font-family: inherit;
         font-size: 16px;
         font-weight: 400;
         line-height: 24px;
         letter-spacing: 0.4430769979953766px;
         text-align: center;
-            }
-        }
-      }
-      
-      .menu__item {
-        display: block;
-        cursor: pointer;
-        margin-top: 32px;
-        color: #555E68;
-font-size: 24px;
-font-weight: 500;
-line-height: 33px;
-letter-spacing: 0.9599999785423279px;
-text-align: center;
-
-      }
-
-     
-        #menu__toggle:checked ~ .menu__box {
-        visibility: visible;
-        left: 0;
-        }
-        
-    nav,
-    .header__nav  {
-      display: flex;
-      list-style: none;
-      font-size: 14px;
-      justify-content: space-between;
-    }
-    nav {
-      li {
-        cursor: pointer;
-        margin-right: 39px;
-      }
-    }
-  
-    button {
-      cursor: pointer;
-      font-size: inherit;
-      
-    }
-
-    &__lang .active,
-    .header__connect::after{
-      background: -webkit-linear-gradient(vars.$blue, vars.$cyan);
-      background-clip: border-box;
-        -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-  
-    &__lang {
-      display: flex;
-      button{
-        background: none;
-      }
-    }
-  
-    &__lang button {
-      margin-right: 12px;
-      font-size: 16px;
-  
-      border: none;
-    }
-  
-    &__lang .active {
-      color: vars.$blue;
-      position: relative;
-    }
-    .active::before{
-      content: '';
-      position: absolute;
-      
-      height: 1px;
-      top: 100%;
-      width: 18.94px;
-      
-      background: linear-gradient(vars.$blue, vars.$cyan);
-    }
-  
-    &__connect {
-      height: 48px;
-      min-width:175px;
-      color: vars.$blue;
-      border: vars.$blue 1px solid;
-      border-radius: 24px;
-      padding: 13px 28px;
-      position: relative;
-      background: linear-gradient(vars.$blue, vars.$cyan);
-    }
-
-    .header__connect::before{
-      content: '';
-      top: 1px;
-      left: 1px;
-      right: 1px;
-      bottom: 1px;
-      background-color: white;
-    position: absolute;
-    border-radius: 24px;
-    }
-    .header__connect::after{
-      content: 'Подключиться';
-      
-      position: absolute;
-    
-    top: 13px;
-    left: 28px;
-    }
-  
-    @media (vars.$md) {
-      nav,
-      .header__lang,
-      .header__connect {
-        display: none;
-      }
-      .hamburger-menu {
-        display: block;
       }
     }
   }
+
+  .menu__item {
+    display: block;
+    cursor: pointer;
+    margin-top: 32px;
+    color: #555e68;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 33px;
+    letter-spacing: 0.9599999785423279px;
+    text-align: center;
+  }
+
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+
+  nav,
+  .header__nav {
+    display: flex;
+    list-style: none;
+    font-size: 14px;
+    justify-content: space-between;
+  }
+  nav {
+    li {
+      cursor: pointer;
+      margin-right: 39px;
+    }
+  }
+
+  button {
+    cursor: pointer;
+    font-size: inherit;
+  }
+
+  &__lang .active,
+  .header__connect::after {
+    background: -webkit-linear-gradient(vars.$blue, vars.$cyan);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__lang {
+    display: flex;
+    button {
+      background: none;
+    }
+  }
+
+  &__lang button {
+    margin-right: 12px;
+    font-size: 16px;
+
+    border: none;
+  }
+
+  &__lang .active {
+    color: vars.$blue;
+    position: relative;
+  }
+  .active::before {
+    content: '';
+    position: absolute;
+
+    height: 1px;
+    top: 100%;
+    width: 18.94px;
+
+    background: linear-gradient(vars.$blue, vars.$cyan);
+  }
+
+  &__connect {
+    height: 48px;
+    min-width: 175px;
+    color: vars.$blue;
+    border: vars.$blue 1px solid;
+    border-radius: 24px;
+    padding: 13px 28px;
+    position: relative;
+    background: linear-gradient(vars.$blue, vars.$cyan);
+  }
+
+  .header__connect::before {
+    content: '';
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    background-color: white;
+    position: absolute;
+    border-radius: 24px;
+  }
+  .header__connect::after {
+    content: 'Подключиться';
+
+    position: absolute;
+
+    top: 13px;
+    left: 28px;
+  }
+
+  @media (vars.$md) {
+    nav,
+    .header__lang,
+    .header__connect {
+      display: none;
+    }
+    .hamburger-menu {
+      display: block;
+    }
+  }
+}

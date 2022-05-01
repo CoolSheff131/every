@@ -1,121 +1,121 @@
 .autoBusiness {
+  display: flex;
+  margin-top: 140px;
+  background-color: #3898fe30;
+  background-image: url('../assets/img/autuBusinessBgn.svg');
+  background-repeat: no-repeat;
+  background-position-x: right;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 94px;
+  padding-right: 94px;
+
+  &__left {
+    width: 50%;
+  }
+  &__right {
+    width: 50%;
     display: flex;
-    margin-top: 140px;
-    background-color: #3898fe30;
-    background-image: url('../assets/img/autuBusinessBgn.svg');
-    background-repeat: no-repeat;
-    background-position-x: right;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 94px;
-    padding-right: 94px;
-  
-    &__left {
-      width: 50%;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0.9859458804130554px;
+    text-align: left;
+    color: #2d3238;
+  }
+  h5 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.4430769979953766px;
+    text-align: left;
+  }
+  &__email {
+    margin-top: 60px;
+    height: 48px;
+    width: 440px;
+    display: flex;
+    border-radius: 24px;
+    background-color: vars.$ligntCyan;
+    .completedMsg {
+      display: none;
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      img {
+        margin-right: 16px;
+      }
     }
-    &__right {
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-    }
-    h1 {
-      font-size: 40px;
-      font-weight: 700;
-      line-height: 46px;
-      letter-spacing: 0.9859458804130554px;
-      text-align: left;
-      color: #2d3238;
-    }
-    h5 {
-      margin: 0;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 28px;
-      letter-spacing: 0.4430769979953766px;
-      text-align: left;
-    }
-    &__email {
-      margin-top: 60px;
-      height: 48px;
-      width: 440px;
-      display: flex;
-      border-radius: 24px;
+    input {
       background-color: vars.$ligntCyan;
-      .completedMsg{
-        display: none;
-        width: 100%;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        img{
-            margin-right: 16px;
-        }
+      padding-left: 20px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      height: 100%;
+      width: 100%;
+      border: none;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      border-radius: 24px 0 0 24px;
+      outline: none;
     }
-      input {
-        background-color: vars.$ligntCyan;
-        padding-left: 20px;
-        padding-top: 12px;
-        padding-bottom: 12px;
-        height: 100%;
-        width: 100%;
-        border: none;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        border-radius: 24px 0 0 24px;
-        outline: none;
-      }
-      button:hover{
-        box-shadow: 0px 6px 18px rgba(53, 152, 254, 0.38185);
+    button:hover {
+      box-shadow: 0px 6px 18px rgba(53, 152, 254, 0.38185);
     }
-      button {
-        background: linear-gradient(vars.$blue, vars.$cyan);
-        transition: all .5s ease-in-out;
-        cursor: pointer;
-        color: vars.$white;
-        
-        border: none;
-        border-radius: 24px;
-        padding: 12px 53px;
-        
-        font-family: inherit;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0.4430769979953766px;
-        text-align: center;
-      }
-    }
-  
-    @media (vars.$md) {
-      margin-top: 130px;
-      flex-direction: column;
-      h1,
-      h5 {
-        text-align: center;
-      }
-  
-      &__left,
-      &__right {
-        width: 100%;
-      }
-      &__right {
-        margin-top: 24px;
-      }
-  
-      &__email {
-        margin-top: 48px;
-      }
-    }
-    @media (vars.$sm) {
-      padding-left: 21px;
-      padding-right: 21px;
-      margin-left: -60px;
-      margin-right: -60px;
-      h1 {
-        font-size: 28px;
-      }
-      &__email {
-        width: 100%;
-      }
+    button {
+      background: linear-gradient(vars.$blue, vars.$cyan);
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+      color: vars.$white;
+
+      border: none;
+      border-radius: 24px;
+      padding: 12px 53px;
+
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.4430769979953766px;
+      text-align: center;
     }
   }
+
+  @media (vars.$md) {
+    margin-top: 130px;
+    flex-direction: column;
+    h1,
+    h5 {
+      text-align: center;
+    }
+
+    &__left,
+    &__right {
+      width: 100%;
+    }
+    &__right {
+      margin-top: 24px;
+    }
+
+    &__email {
+      margin-top: 48px;
+    }
+  }
+  @media (vars.$sm) {
+    padding-left: 21px;
+    padding-right: 21px;
+    margin-left: -60px;
+    margin-right: -60px;
+    h1 {
+      font-size: 28px;
+    }
+    &__email {
+      width: 100%;
+    }
+  }
+}
