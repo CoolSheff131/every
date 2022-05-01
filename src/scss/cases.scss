@@ -17,12 +17,15 @@
       justify-content: space-between;
     }
     .block {
+        cursor: pointer;
+        transition: all .5s ease-in-out;
       border: 1px solid rgba(56, 152, 254, 0.187528);
+      border-bottom: 3px solid rgba(56, 152, 254, 0.187528);
       display: flex;
       flex-direction: column;
       justify-content: end;
       width: 346px;
-      height: 297px;
+      padding-top: 147px;
       padding-left: 24px;
       padding-right: 24px;
       padding-bottom: 19px;
@@ -59,9 +62,10 @@
         }
       }
     }
-    .block.active {
+    .block:hover {
+        
       background-color: vars.$ligntCyan;
-      border: none;
+      border: transparent;
       border-bottom: 3px solid vars.$blue;
     }
     #case1 {
@@ -85,7 +89,7 @@
         margin-top: 70px;
         display: flex;
         width: fit-content;
-        transition: all 1s ease-in-out;
+        transition: all .5s ease-in-out;
       }
   
       .block {
