@@ -1,0 +1,153 @@
+.comingSoon {
+    margin-top: 160px;
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 46px;
+      letter-spacing: 0.9859458804130554px;
+      text-align: left;
+      color: #2d3238;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      margin-top: 90px;
+      li {
+        display: flex;
+        padding-bottom: 50px;
+        border-bottom: 1px solid #1792c7;
+        margin-bottom: 50px;
+        .name {
+          display: block;
+          width: 50%;
+          padding-right: 50px;
+          h2 {
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 36px;
+            letter-spacing: 0.4399999976158142px;
+            text-align: left;
+            color: #2d3238;
+            margin: 0;
+          }
+        }
+        .desc::before {
+          content: '';
+          position: absolute;
+          left: 21px;
+          width: 3px;
+          height: 43px;
+          background: linear-gradient(180deg, #00b8f0 0%, #00b8f0 0.01%, #b2eefc 73.96%);
+          transform: rotate(90deg);
+        }
+        .desc {
+          display: block;
+          position: relative;
+          width: 50%;
+          padding-left: 58px;
+          margin: 0;
+          h5 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+            letter-spacing: 0.4430769979953766px;
+            text-align: left;
+            color: #2d3238;
+          }
+          .imgs {
+            margin: 0;
+            margin-top: 18.22px;
+            display: flex;
+            div {
+              margin: 0;
+            }
+          }
+          #bitrix {
+            background-image: url('../assets/img/comingSoon1.svg');
+            width: 54.47px;
+            height: 32.36px;
+            margin-right: 19.28px;
+          }
+          #amoCRM {
+            background-image: url('../assets/img/comingSoon2.svg');
+            width: 111.25px;
+            height: 23.73px;
+          }
+        }
+      }
+      :last-child {
+        margin-bottom: 0;
+      }
+    }
+    h5 {
+      margin: 0;
+      margin-top: 40px;
+      text-align: center;
+      color: #2d3238;
+    }
+  
+    @media (max-width: 768px) {
+      margin-top: 110px;
+      h1 {
+        text-align: center;
+      }
+      ul {
+        margin-top: 70px;
+        li {
+          flex-direction: column;
+          padding-bottom: 32px;
+          margin-bottom: 32px;
+          .name,
+          .desc {
+            width: 100%;
+          }
+          .name {
+            h2 {
+              text-align: center;
+            }
+          }
+          .desc {
+            margin-top: 22px;
+          }
+        }
+      }
+      h5 {
+        margin-top: 32px;
+        font-size: 22px;
+      }
+    }
+    @media (max-width: 320px) {
+      margin-top: 96px;
+      ul {
+        li {
+          padding-bottom: 30px;
+          margin-bottom: 30px;
+          .name {
+            padding-left: 58px;
+            h2 {
+              font-size: 18px;
+              font-weight: 400;
+              line-height: 24px;
+              letter-spacing: 0.4399999976158142px;
+              text-align: left;
+            }
+          }
+          .desc {
+            h5 {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 24px;
+              letter-spacing: 0.4430769979953766px;
+              text-align: left;
+            }
+          }
+        }
+      }
+      h5 {
+        margin-top: 30px;
+        font-size: 18px;
+      }
+    }
+  }

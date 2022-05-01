@@ -1,0 +1,116 @@
+.banksIntegration {
+    margin-top: 140px;
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 46px;
+      letter-spacing: 0.9859458804130554px;
+      text-align: left;
+      color: #2d3238;
+    }
+    ul {
+      list-style: none;
+    }
+  
+    .blocks {
+      margin-top: 90px;
+      display: flex;
+      justify-content: space-between;
+      h5 {
+        color: #3898fe80;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.4430769979953766px;
+        text-align: left;
+      }
+      div {
+        border: 1px solid #3898fe30;
+        width: 534px;
+        padding-left: 40px;
+      }
+    }
+  
+    &__left {
+      .banks {
+        border-bottom: 1.08px solid #3898fe30;
+      }
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+          width: 50%;
+          height: 76.08px;
+          background-repeat: no-repeat;
+          background-position-y: center;
+        }
+        #tochka {
+          background-image: url('../assets/img/точка.svg');
+        }
+        #tinkoff {
+          background-image: url('../assets/img/тинькофф.svg');
+        }
+        #module {
+          background-image: url('../assets/img/модуль.svg');
+        }
+        #download1c {
+          background-image: url('../assets/img/Звгрузка\ из\ 1С.svg');
+        }
+      }
+    }
+  
+    &__right {
+      ul {
+        padding: 0;
+      }
+      li {
+        display: flex;
+        h6 {
+          margin: 0;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 75px;
+          letter-spacing: 0.4430769979953766px;
+          text-align: left;
+        }
+        height: 72.85px;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      margin-top: 110px;
+      h1 {
+        text-align: center;
+      }
+  
+      .blocks {
+        margin-top: 70px;
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      &__left {
+        margin-bottom: 40px;
+      }
+    }
+    @media (max-width: 320px) {
+      margin-top: 140px;
+      .blocks {
+        margin-top: 40px;
+        div {
+          width: 100%;
+          padding-left: 0px;
+        }
+        h5 {
+          margin-left: 16px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+      }
+      li {
+        h6 {
+          font-size: 15px;
+        }
+      }
+    }
+  }

@@ -1,0 +1,105 @@
+.autoBusiness {
+    display: flex;
+    margin-top: 140px;
+    background-color: #3898fe30;
+    background-image: url('../assets/img/Mask\ GroupAuto.svg');
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 94px;
+    padding-right: 94px;
+  
+    &__left {
+      width: 50%;
+    }
+    &__right {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 46px;
+      letter-spacing: 0.9859458804130554px;
+      text-align: left;
+      color: #2d3238;
+    }
+    h5 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0.4430769979953766px;
+      text-align: left;
+    }
+    &__email {
+      margin-top: 60px;
+      height: 48px;
+      width: 440px;
+      position: relative;
+  
+      input {
+        background-color: #f3f9ff;
+        padding-left: 20px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        height: 100%;
+        width: 100%;
+        border: none;
+        border-radius: 24px;
+        outline: none;
+      }
+  
+      button {
+        background: linear-gradient(#1792c7, #00b8f0);
+        cursor: pointer;
+        color: #fff;
+        position: absolute;
+        border: none;
+        border-radius: 24px;
+        padding: 12px 53px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        font-family: inherit;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.4430769979953766px;
+        text-align: center;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      margin-top: 130px;
+      flex-direction: column;
+      h1,
+      h5 {
+        text-align: center;
+      }
+  
+      &__left,
+      &__right {
+        width: 100%;
+      }
+      &__right {
+        margin-top: 24px;
+      }
+  
+      &__email {
+        margin-top: 48px;
+      }
+    }
+    @media (max-width: 320px) {
+      padding-left: 21px;
+      padding-right: 21px;
+      margin-left: -60px;
+      margin-right: -60px;
+      h1 {
+        font-size: 28px;
+      }
+      &__email {
+        width: 100%;
+      }
+    }
+  }
