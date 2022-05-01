@@ -49,9 +49,12 @@
         border-radius: 24px;
         outline: none;
       }
-  
+      button:hover{
+        box-shadow: 0px 6px 18px rgba(53, 152, 254, 0.38185);
+    }
       button {
         background: linear-gradient(vars.$blue, vars.$cyan);
+        transition: all .5s ease-in-out;
         cursor: pointer;
         color: vars.$white;
         position: absolute;
