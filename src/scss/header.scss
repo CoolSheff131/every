@@ -22,6 +22,9 @@
     .hamburger-menu {
       display: none;
       z-index: 10;
+      nav{
+          display: block;
+      }
     }
   
     .menu__btn {
@@ -34,7 +37,6 @@
       cursor: pointer;
       z-index: 1;
     }
-    /* добавляем "гамбургер" */
   
     .menu__btn > span::before,
     .menu__btn > span::after {
@@ -68,6 +70,11 @@
         list-style: none;
         text-align: center;
         background-color: vars.$white;
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
         li{
             button{
                 margin: 0 auto;
