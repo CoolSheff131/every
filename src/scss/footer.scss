@@ -1,6 +1,6 @@
 .footer {
     margin-top: 126px;
-    background-color: #f3f9ff;
+    background-color: vars.$ligntCyan;
     .container {
       padding-top: 79.58px;
       h1 {
@@ -55,7 +55,7 @@
     .footer__form {
       input,
       textarea {
-        background-color: #fff;
+        background-color: vars.$white;
         padding-left: 20px;
         padding-top: 12px;
         padding-bottom: 12px;
@@ -68,12 +68,12 @@
       }
       input::placeholder,
       textarea::placeholder {
-        color: #1792c7;
+        color: vars.$blue;
       }
       button {
-        background: linear-gradient(#1792c7, #00b8f0);
+        background: linear-gradient(vars.$blue, vars.$cyan);
         cursor: pointer;
-        color: #fff;
+        color: vars.$white;
         border: none;
         border-radius: 24px;
         padding: 12px 53px;
@@ -105,12 +105,12 @@
         line-height: 28px;
         letter-spacing: 0.4430769979953766px;
         text-align: left;
-        color: #00b8f0;
+        color: vars.$cyan;
         cursor: pointer;
       }
     }
   
-    @media (max-width: 768px) {
+    @media (vars.$md) {
       margin-top: 110px;
       display: block;
       .container {
@@ -146,7 +146,7 @@
       }
     }
   
-    @media (max-width: 320px) {
+    @media (vars.$sm) {
       margin-top: 33px;
       .container {
         padding-top: 70px;

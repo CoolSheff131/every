@@ -1,3 +1,4 @@
+@use '../scss/variables' as vars;
 @import '../scss/header';
 @import '../scss/fonts';
 @import '../scss/first';
@@ -19,10 +20,10 @@
   width: 100%;
   margin: 0 auto;
   font-family: AvenirNext;
-  @media (max-width: 768px) {
+  @media (vars.$md) {
     max-width: 639px;
   }
-  @media (max-width: 320px) {
+  @media (vars.$sm) {
     max-width: none;
     padding-left: 21px;
     padding-right: 21px;

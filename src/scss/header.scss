@@ -71,19 +71,19 @@
     }
   
     &__lang .active {
-      color: #1792c7;
+      color: vars.$blue;
       text-decoration: underline;
     }
   
     &__connect {
       height: 48px;
-      color: #1792c7;
-      border: #1792c7 1px solid;
+      color: vars.$blue;
+      border: vars.$blue 1px solid;
       border-radius: 24px;
       padding: 13px 28px;
     }
   
-    @media (max-width: 768px) {
+    @media (vars.$md) {
       nav,
       .header__lang,
       .header__connect {

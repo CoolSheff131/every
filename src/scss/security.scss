@@ -39,7 +39,7 @@
       }
     }
   
-    @media (max-width: 768px) {
+    @media (vars.$md) {
       margin-top: 110px;
       display: block;
       .security__content {
@@ -63,7 +63,7 @@
         }
       }
     }
-    @media (max-width: 320px) {
+    @media (vars.$sm) {
       h1 {
         display: none;
       }

@@ -10,7 +10,7 @@
       position: relative;
   
       input {
-        background-color: #f3f9ff;
+        background-color: vars.$ligntCyan;
         padding-left: 20px;
         padding-top: 12px;
         padding-bottom: 12px;
@@ -22,9 +22,9 @@
       }
   
       button {
-        background: linear-gradient(#1792c7, #00b8f0);
+        background: linear-gradient(vars.$blue, vars.$cyan);
         cursor: pointer;
-        color: #fff;
+        color: vars.$white;
         position: absolute;
         border: none;
         border-radius: 24px;
@@ -75,7 +75,7 @@
       text-align: left;
     }
   
-    @media (max-width: 768px) {
+    @media (vars.$md) {
       margin-top: 110px;
       display: block;
   
@@ -108,7 +108,7 @@
         margin: 42px auto 0;
       }
     }
-    @media (max-width: 320px) {
+    @media (vars.$sm) {
       h1 {
         display: none;
       }

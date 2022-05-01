@@ -42,7 +42,7 @@
         line-height: 22px;
         letter-spacing: 0.36923089623451233px;
         text-align: left;
-        color: #1792c7;
+        color: vars.$blue;
       }
       span {
         display: flex;
@@ -50,16 +50,16 @@
         .arrows {
           width: 10px;
           height: 10px;
-          border-bottom: 1px solid #1792c7;
-          border-left: 1px solid #1792c7;
+          border-bottom: 1px solid vars.$blue;
+          border-left: 1px solid vars.$blue;
           transform: rotate(-135deg);
         }
       }
     }
     .block.active {
-      background-color: #f3f9ff;
+      background-color: vars.$ligntCyan;
       border: none;
-      border-bottom: 3px solid #1792c7;
+      border-bottom: 3px solid vars.$blue;
     }
     #case1 {
       background-image: url('../assets/img/case1.svg');
@@ -70,7 +70,7 @@
     #case3 {
       background-image: url('../assets/img/case3.svg');
     }
-    @media (max-width: 768px) {
+    @media (vars.$md) {
       margin-top: 110px;
       h1 {
         text-align: center;
@@ -85,7 +85,7 @@
         width: 310px;
       }
     }
-    @media (max-width: 320px) {
+    @media (vars.$sm) {
       margin-top: 135px;
     }
   }
