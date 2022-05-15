@@ -1,9 +1,9 @@
 .tariffs {
   margin-top: 91px;
-  h1 {
+  &__title {
     display: none;
   }
-  &__email {
+  .form-email {
     margin-top: 48px;
     height: 48px;
     width: 440px;
@@ -12,7 +12,7 @@
     display: flex;
 
     background-color: vars.$ligntCyan;
-    .completedMsg {
+    &__completedMsg {
       display: none;
       width: 100%;
       text-align: center;
@@ -22,7 +22,7 @@
         margin-right: 16px;
       }
     }
-    input {
+    &__input {
       background-color: vars.$ligntCyan;
       text-overflow: ellipsis;
       overflow: hidden;
@@ -36,11 +36,11 @@
       outline: none;
     }
 
-    button:hover {
+    &__button:hover {
       box-shadow: 0px 6px 18px rgba(53, 152, 254, 0.38185);
     }
 
-    button {
+    &__button {
       background: linear-gradient(vars.$blue, vars.$cyan);
       transition: all 0.5s ease-in-out;
       cursor: pointer;
@@ -61,20 +61,20 @@
   &__content {
     display: flex;
   }
-  &__email {
+  .form-email_bottom {
     display: none;
   }
   &__left {
     width: 497px;
-    .tariffs__email {
+    .form-email {
       display: flex;
     }
-    h1 {
+    .tariffs__title {
       display: block;
     }
   }
 
-  h1 {
+  .tariffs__title {
     font-size: 40px;
     font-weight: 700;
     line-height: 46px;
@@ -82,7 +82,7 @@
     text-align: left;
     color: #2d3238;
   }
-  h5 {
+  .tariffs__subtitle {
     margin: 0;
     margin-top: 28px;
     font-size: 18px;
@@ -100,7 +100,7 @@
       display: flex;
       margin-top: 70px;
     }
-    h1 {
+    .tariffs__title {
       text-align: center;
       width: 100%;
       display: block;
@@ -110,24 +110,24 @@
 
     &__left {
       width: 100%;
-      h1 {
+      .tariffs__title {
         display: none;
       }
-      .tariffs__email {
+      .form-email {
         display: none;
       }
     }
 
-    &__email {
+    .form-email_bottom {
       display: flex;
       margin: 42px auto 0;
     }
   }
   @media (vars.$sm) {
-    h1 {
+    .tariffs__title {
       display: none;
     }
-    h5 {
+    .tariffs__subtitle {
       margin-top: 40px;
     }
     &__content {
@@ -135,11 +135,11 @@
     }
     &__left {
       margin-top: 46px;
-      h1 {
+      .tariffs__title {
         display: block;
       }
     }
-    &__email {
+    .form-email_bottom {
       width: 100%;
     }
   }

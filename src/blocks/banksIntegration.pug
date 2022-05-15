@@ -1,24 +1,30 @@
 block banksIntegration 
     section.banksIntegration
-        h1 Банки и интеграции
+        h1.banksIntegration__title Банки и интеграции
         .blocks
             .banksIntegration__left
-                h5 Банки
-                ul.banks
-                    li#tochka
-                    li#tinkoff
-                    li#module
-                ul
-                    li#download1c
+                .banks
+                    h5.banks__title Банки
+                    ul.banks__list
+                        li.banks__item
+                            img(src="../assets/img/точка.svg", alt="точка")
+                        li.banks__item
+                            img(src="../assets/img/тинькофф.svg", alt="тинькофф")
+                        li.banks__item
+                            img(src="../assets/img/модуль.svg", alt="модуль")
+                    ul.banks__list
+                        li
+                            img(src="../assets/img/Звгрузка\ из\ 1С.svg", alt="Звгрузка\ из\ 1С")
             .banksIntegration__right
-                h5 Интеграции
-                ul 
-                    li 
-                        img(src="../assets/img/pushNotify.svg", alt="")
-                        h6 Push-web уведомления
-                    li 
-                        img(src="../assets/img/emailNotify.svg", alt="")
-                        h6 E-mail уведомления
-                    li
-                        img(src="../assets/img/telegramNotify.svg", alt="")
-                        h6 Telegram
+                .integrations
+                    h5.integrations__title Интеграции
+                    ul.integrations__list
+                        li.integrations__item 
+                            img(src="../assets/img/pushNotify.svg", alt="").integrations__item-img
+                            h6.integrations__item-title Push-web уведомления
+                        li.integrations__item
+                            img(src="../assets/img/emailNotify.svg", alt="").integrations__item-img
+                            h6.integrations__item-title E-mail уведомления
+                        li.integrations__item
+                            img(src="../assets/img/telegramNotify.svg", alt="").integrations__item-img
+                            h6.integrations__item-title Telegram

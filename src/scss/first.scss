@@ -10,7 +10,7 @@
   .container {
     display: flex;
   }
-  h1 {
+  &__title {
     font-size: 40px;
     font-weight: 700;
     line-height: 46px;
@@ -18,7 +18,7 @@
     text-align: left;
     color: #2d3238;
   }
-  h5 {
+  &__subtitle {
     margin: 0;
     margin-top: 10px;
     font-size: 18px;
@@ -28,18 +28,16 @@
     text-align: left;
   }
 
-  &__email {
+  .form-email {
     z-index: 0;
     margin-top: 48px;
     height: 48px;
     width: 440px;
-
     border-radius: 24px;
     display: flex;
-
     background-color: vars.$ligntCyan;
 
-    .completedMsg {
+    &__completedMsg {
       display: none;
       width: 100%;
       text-align: center;
@@ -49,7 +47,7 @@
         margin-right: 16px;
       }
     }
-    input {
+    &__input {
       background-color: vars.$ligntCyan;
       text-overflow: ellipsis;
       overflow: hidden;
@@ -62,11 +60,11 @@
       border: none;
       outline: none;
     }
-    button:hover {
+    &__button:hover {
       box-shadow: 0px 6px 18px rgba(53, 152, 254, 0.38185);
     }
 
-    button {
+    &__button {
       transition: all 0.5s ease-in-out;
       background: linear-gradient(vars.$blue, vars.$cyan);
       cursor: pointer;
@@ -102,23 +100,20 @@
       align-items: center;
       display: flex;
     }
-    h1 {
+    &__title {
       font-size: 48px;
-      font-weight: 700;
       line-height: 54px;
       letter-spacing: 0.9859458804130554px;
       text-align: center;
       color: #2d3238;
     }
 
-    h5 {
+    &__subtitle {
       font-size: 18px;
-      font-weight: 400;
       line-height: 28px;
-      letter-spacing: 0.4430769979953766px;
       text-align: center;
     }
-    &__email {
+    .form-email {
       margin-top: 48px;
       height: 48px;
       width: 100%;
@@ -127,24 +122,19 @@
   }
 
   @media (vars.$sm) {
-    h1 {
+    &__title {
       font-size: 32px;
-      font-weight: 700;
       line-height: 38px;
       letter-spacing: 0.9859458804130554px;
-      text-align: center;
       color: #2d3238;
     }
 
-    h5 {
+    &__subtitle {
       font-size: 16px;
       margin-top: 12px;
-      font-weight: 400;
       line-height: 24px;
-      letter-spacing: 0.4430769979953766px;
-      text-align: center;
     }
-    &__email {
+    .form-email {
       display: none;
     }
   }

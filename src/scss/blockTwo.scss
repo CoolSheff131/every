@@ -10,7 +10,7 @@
     width: 50%;
   }
 
-  h1 {
+  &__title {
     font-size: 28px;
     font-weight: 400;
     line-height: 36px;
@@ -18,7 +18,7 @@
     text-align: left;
     color: #2d3238;
   }
-  h5 {
+  &__subtitle {
     margin: 0;
     font-size: 18px;
     font-weight: 400;
@@ -36,7 +36,7 @@
     }
   }
   @media (vars.$sm) {
-    h5 {
+    &__subtitle {
       margin-top: 12px;
     }
     &__left {

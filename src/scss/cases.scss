@@ -5,7 +5,7 @@
     display: none;
   }
 
-  h1 {
+  &__title {
     font-size: 40px;
     font-weight: 700;
     line-height: 46px;
@@ -37,7 +37,7 @@
     background-position-x: 24px;
     background-position-y: 30px;
 
-    h5 {
+    &__title {
       font-size: 22px;
       font-weight: 400;
       line-height: 30px;
@@ -91,7 +91,7 @@
   @media (vars.$md) {
     margin-top: 110px;
 
-    h1 {
+    &__title {
       text-align: center;
     }
 

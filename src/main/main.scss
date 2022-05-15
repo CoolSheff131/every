@@ -30,7 +30,7 @@
 }
 .background {
   z-index: -100;
-  position: absolute;
+  position: fixed;
   top: 2295px;
   @media (vars.$md) {
     display: none;
@@ -39,7 +39,7 @@
 
 .background_md {
   z-index: -100;
-  position: absolute;
+  position: fixed;
   top: 3866px;
   display: none;
   @media (vars.$md) {
@@ -52,7 +52,7 @@
 
 .background_sm {
   z-index: -100;
-  position: absolute;
+  position: fixed;
   top: 3821px;
   display: none;
   @media (vars.$sm) {

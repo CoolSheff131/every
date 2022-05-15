@@ -7,7 +7,7 @@ document.querySelectorAll('#emailForm').forEach((emailForm) =>
     console.log(e);
     e.target[0].style.display = 'none';
     e.target[1].style.display = 'none';
-    e.target.querySelector('.completedMsg').style.display = 'flex';
+    e.target.querySelector('.form-email__completedMsg').style.display = 'flex';
   }),
 );
 

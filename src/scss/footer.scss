@@ -34,7 +34,7 @@
   background-color: vars.$ligntCyan;
   .container {
     padding-top: 79.58px;
-    h1 {
+    &__title {
       margin: 0;
       width: 100%;
       font-size: 40px;
@@ -152,7 +152,7 @@
     display: block;
     .container {
       padding-top: 70px;
-      h1 {
+      .footer__title  {
         text-align: center;
       }
       .footer__content {
@@ -187,7 +187,7 @@
     margin-top: 33px;
     .container {
       padding-top: 70px;
-      h1 {
+      .footer__title {
         font-size: 32px;
         font-weight: 700;
         line-height: 38px;

@@ -2,13 +2,13 @@ mixin blockSection(title,subtitle,bgn)
     section.first
         .container
             .first__left
-                h1= title
-                h5= subtitle
-                form(method="post",onsubmit="event.preventDefault();").first__email#emailForm
-                    div.completedMsg 
+                h1.first__title= title
+                h5.first__subtitle= subtitle
+                form(method="post",onsubmit="event.preventDefault();").form-email#emailForm
+                    div.form-email__completedMsg 
                         img(src="../assets/img/galka.svg", alt="")
                         span Проверьте e-mail!
-                    input(type="email",placeholder="Введите email",name="email",required)
-                    button(type="submit") Узнать
+                    input(type="email",placeholder="Введите email",name="email",required).form-email__input
+                    button(type="submit").form-email__button Узнать
             .first__right
                 img(src=bgn)

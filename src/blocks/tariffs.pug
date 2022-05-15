@@ -1,21 +1,19 @@
 block tariffs 
     section.tariffs#tariffs
-        h1 Тарифы
+        h1.tariffs__title Тарифы
         .tariffs__content
             .tariffs__left
-                h1 Тарифы
-                h5 Everypay находится в стадии закрытого beta-теста, но у вас есть возможность присоединиться к тестированию сервиса.
-                h5 Для компаний, участвующих в тестировании, сервис  навсегда бесплатен. Напишите нам и мы с вами свяжемся.
-                form(method="post",onsubmit="event.preventDefault();").tariffs__email#emailForm
-                    div.completedMsg 
+                h1.tariffs__title Тарифы
+                h5.tariffs__subtitle Everypay находится в стадии закрытого beta-теста, но у вас есть возможность присоединиться к тестированию сервиса.
+                h5.tariffs__subtitle Для компаний, участвующих в тестировании, сервис  навсегда бесплатен. Напишите нам и мы с вами свяжемся.
+                form(method="post",onsubmit="event.preventDefault();").form-email#emailForm
+                    div.form-email__completedMsg 
                         img(src="../assets/img/galka.svg", alt="")
                         span Проверьте e-mail!
-                    input(type="email",placeholder="Введите email",name="email",required  )
-                    button(type="submit") Узнать
-
-                    
+                    input(type="email",placeholder="Введите email",name="email",required).form-email__input
+                    button(type="submit").form-email__button Узнать
             .tariffs__right 
                 img(src="../assets/img/Рубль.svg", alt="")
-        .tariffs__email
-                    input(type="email",placeholder="Введите email" )
-                    button Узнать
+        .form-email_bottom.form-email
+                    input(type="email",placeholder="Введите email" ).form-email__input
+                    button.form-email__button Узнать
