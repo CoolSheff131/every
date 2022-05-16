@@ -2,15 +2,16 @@
   "name": "every",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/main/index.pug",
   "scripts": {
     "start": "parcel src/main/index.pug --open",
-    "build": "parcel build src/main/index.pug --public-url ./ --no-minify"
+    "build": "yarn add parcel-bundler --dev && parcel build src/main/index.pug --out-dir build/ --public-url ./ --no-minify"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "parcel-bundler": "^1.12.5",
     "pug": "^3.0.2",
     "sass": "^1.51.0"
   }
